@@ -14,7 +14,7 @@ To investigate whether the number of backers has any relationship with funding s
 - https://www.kaggle.com/datasets/kemical/kickstarter-projects 
 - Key fields:
   - `main_category` Main category of project
-  - `state` State of project (successful, canceled, etc.)
+  - `state` State of project (successful, cancelled, etc.)
   - `backers` Number of project backers
   - `pledged` Amount pledged
   - `goal` Fundraising goal
@@ -32,6 +32,9 @@ The dataset was cleaned using SQL to ensure reliable analysis:
   - **fnd_ratio = pledged / goal**
 
 This ensures consistent and meaningful comparisons across projects.
+
+### Missing Values Check
+![Missing Values Check](screenshots/cleaning_null_check.png)
 
 ---
 
@@ -55,7 +58,15 @@ This ensures consistent and meaningful comparisons across projects.
 - Compared average funding ratios across groups
 
 ---
+## Results
 
+### Funding Analysis
+![Top Projects](screenshots/top10_fnd_ratio_projects.png)
+
+### Backer Analysis
+![Backer Groups](screenshots/backer_group_analysis.png)
+
+---
 ## Key Findings
 - Many failed projects still achieved relatively high funding ratios.
 - Higher backer counts do not show a strong, consistent relationship with funding ratio in this filtered dataset.
